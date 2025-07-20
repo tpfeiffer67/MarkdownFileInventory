@@ -1,0 +1,26 @@
+tasks:
+  - output_file: "MoC-Diagrams.md"
+    template: "Models/MoC-table.md"
+    format: "| [%s](%s) | %s |\n"
+    folders:
+      - "Excalidraw"
+    extensions:
+      - ".excalidraw.svg"
+
+  - output_file: "MoC-Pages.md"
+    template: "Models/MoC-table.md"
+    format: "| [%s](%s) | %s |\n"
+    folders:
+      - "Pages"
+    extensions:
+      - ".md"
+
+  - output_file: "MoC-IA.md"
+    template: "Models/MoC.md"
+    format: "- [%s](%s)  *%s*\n"
+    folders:
+      - "Pages"
+    extensions:
+      - ".md"
+    tags:
+      - "#ia"
